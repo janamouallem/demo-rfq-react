@@ -14,20 +14,26 @@ import SupplierRFQ from './components/pages/SupplierRFQ.jsx'
 import SupplierRFQs from './components/pages/SupplierRFQs.jsx';
 import ReviewRFQ from './components/pages/ReviewRFQ.jsx'
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: 'company/rfqs', element: <CompanyRFQs /> },
+        { path: 'company/rfqs/new', element: <NewRFQ /> },
+        { path: 'company/rfqs/:id/review', element: <ReviewRFQ /> },
+        { path: "supplier/rfqs", element: <SupplierRFQs /> },
+        { path: "supplier/rfqs/:id", element: <SupplierRFQ /> },
+      ],
+    },
+  ],
   {
-    path: '/',
-    element: <App />,
-    children: [
-      { index: true, element: <Home /> },
-      { path: 'company/rfqs', element: <CompanyRFQs /> },
-      { path: 'company/rfqs/new', element: <NewRFQ /> },
-      { path: 'company/rfqs/:id/review', element: <ReviewRFQ /> },
-      { path: "supplier/rfqs", element: <SupplierRFQs /> },
-      { path: "supplier/rfqs/:id", element: <SupplierRFQ /> },
-    ]
+    basename: "/demo-rfq-react", 
   }
-])
+);
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

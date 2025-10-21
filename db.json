@@ -38,7 +38,7 @@
       "id": "rfq-1761028181727",
       "projectName": "building",
       "supplierId": "sup-01",
-      "status": "QUOTED",
+      "status": "APPROVED",
       "createdBy": "company-01",
       "createdAt": "2025-10-21T06:29:41.727Z",
       "items": [
@@ -68,7 +68,7 @@
       "id": "rfq-1761042173603",
       "projectName": "Building A",
       "supplierId": "sup-01",
-      "status": "SENT",
+      "status": "APPROVED",
       "createdBy": "company-01",
       "createdAt": "2025-10-21T10:22:53.603Z",
       "items": [
@@ -78,7 +78,7 @@
           "unit": "ton",
           "qty": 10,
           "companyNote": "note 1",
-          "supplierPrice": null,
+          "supplierPrice": "100",
           "discountPct": null,
           "supplierNote": null
         },
@@ -88,9 +88,189 @@
           "unit": "kg",
           "qty": 100,
           "companyNote": "note 2",
-          "supplierPrice": null,
+          "supplierPrice": "100",
           "discountPct": null,
           "supplierNote": null
+        }
+      ]
+    },
+    {
+      "id": "rfq-1761052495959",
+      "projectName": "testx",
+      "supplierId": "sup-01",
+      "status": "APPROVED",
+      "createdBy": "company-01",
+      "createdAt": "2025-10-21T13:14:55.959Z",
+      "items": [
+        {
+          "id": "fcc56301-c9ee-4c32-8df7-18e164d73381",
+          "name": "x",
+          "unit": "x",
+          "qty": 1,
+          "companyNote": "",
+          "supplierPrice": "100",
+          "discountPct": null,
+          "supplierNote": null
+        }
+      ]
+    },
+    {
+      "id": "rfq-1761052875682",
+      "projectName": "c",
+      "supplierId": "sup-01",
+      "status": "APPROVED",
+      "createdBy": "company-01",
+      "createdAt": "2025-10-21T13:21:15.682Z",
+      "items": [
+        {
+          "id": "cc3c3e12-9a2b-4526-81e8-930cbf2210fc",
+          "name": "c",
+          "unit": "c",
+          "qty": 1,
+          "companyNote": "",
+          "supplierPrice": "100",
+          "discountPct": null,
+          "supplierNote": null
+        }
+      ]
+    },
+    {
+      "id": "rfq-1761053199762",
+      "projectName": "c",
+      "supplierId": "sup-01",
+      "status": "APPROVED",
+      "createdBy": "company-01",
+      "createdAt": "2025-10-21T13:26:39.762Z",
+      "items": [
+        {
+          "id": "df072bf8-fc8c-4f14-add9-e67bbd48fcce",
+          "name": "cc",
+          "unit": "cc",
+          "qty": 1,
+          "companyNote": "",
+          "supplierPrice": "100",
+          "discountPct": null,
+          "supplierNote": null
+        }
+      ]
+    },
+    {
+      "id": "rfq-1761053502856",
+      "projectName": "testt",
+      "supplierId": "sup-01",
+      "status": "APPROVED",
+      "createdBy": "company-01",
+      "createdAt": "2025-10-21T13:31:42.856Z",
+      "items": [
+        {
+          "id": "781c91e5-8d44-49bd-bd88-c45b1921a8fb",
+          "name": "item",
+          "unit": "kg",
+          "qty": 1,
+          "companyNote": "",
+          "supplierPrice": "10000",
+          "discountPct": null,
+          "supplierNote": null
+        }
+      ]
+    },
+    {
+      "id": "rfq-1761053769629",
+      "projectName": "BUILDING 1",
+      "supplierId": "sup-01",
+      "status": "APPROVED",
+      "createdBy": "company-01",
+      "createdAt": "2025-10-21T13:36:09.629Z",
+      "items": [
+        {
+          "id": "614e7394-0bf2-43fd-a670-3942759b6a3f",
+          "name": "item 1",
+          "unit": "ton",
+          "qty": 1,
+          "companyNote": "note 1 ",
+          "supplierPrice": "1000",
+          "discountPct": null,
+          "supplierNote": null
+        },
+        {
+          "id": "724787b9-719b-432b-bc12-fd4ef92d2563",
+          "name": "item 2",
+          "unit": "ton",
+          "qty": 10,
+          "companyNote": "note 2",
+          "supplierPrice": "10000",
+          "discountPct": null,
+          "supplierNote": null
+        }
+      ]
+    },
+    {
+      "id": "rfq-1761059640054",
+      "projectName": "TEST1",
+      "supplierId": "sup-01",
+      "status": "QUOTED",
+      "createdBy": "company-01",
+      "createdAt": "2025-10-21T15:14:00.054Z",
+      "items": [
+        {
+          "id": "a6f308b1-702c-4332-85d2-54a6545d8b57",
+          "name": "Item1 ",
+          "unit": "ton",
+          "qty": 1,
+          "companyNote": "",
+          "supplierPrice": "100",
+          "discountPct": null,
+          "supplierNote": null
+        }
+      ]
+    },
+    {
+      "id": "rfq-1761059672962",
+      "projectName": "test2",
+      "supplierId": "sup-01",
+      "status": "APPROVED",
+      "createdBy": "company-01",
+      "createdAt": "2025-10-21T15:14:32.962Z",
+      "items": [
+        {
+          "id": "19e6ef77-c466-4711-ae2b-59b8e29393fe",
+          "name": "item",
+          "unit": "n",
+          "qty": 1,
+          "companyNote": "",
+          "supplierPrice": "100",
+          "discountPct": null,
+          "supplierNote": null
+        }
+      ]
+    },
+    {
+      "id": "rfq-1761060426246",
+      "projectName": "Building 1",
+      "supplierId": "sup-01",
+      "status": "APPROVED",
+      "createdBy": "company-01",
+      "createdAt": "2025-10-21T15:27:06.246Z",
+      "items": [
+        {
+          "id": "85411ad8-09c3-410a-bbcc-10a0d8d59c6c",
+          "name": "Item1",
+          "unit": "ton",
+          "qty": 10,
+          "companyNote": "comment",
+          "supplierPrice": "1000",
+          "discountPct": "10",
+          "supplierNote": "testt"
+        },
+        {
+          "id": "37d24e86-b574-46c4-9d49-8a9aff262cf0",
+          "name": "item 2",
+          "unit": "kg",
+          "qty": 100,
+          "companyNote": "noteee",
+          "supplierPrice": "2000",
+          "discountPct": "10",
+          "supplierNote": "testtt"
         }
       ]
     }

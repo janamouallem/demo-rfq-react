@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import { api } from "../../api/axios"
+import { useNavigate } from "react-router-dom";
 import {
   Paper, Typography, Table, TableHead, TableRow, TableCell, TableBody,
   TextField, Button, Stack
@@ -10,7 +11,7 @@ import {
 export default function SupplierRFQ() {
   const { id } = useParams();
   const [rfq, setRfq] = useState(null);
-
+  const nav = useNavigate();
   useEffect(()=>{ api.get(`/rfqs/${id}`).then(r=>setRfq(r.data)); },[id]);
 
   const updateItem = (itemId,patch)=>{
@@ -31,7 +32,10 @@ export default function SupplierRFQ() {
       return;
     }
     await api.put(`/rfqs/${rfq.id}`,{...rfq,status:"QUOTED"});
+    nav("/supplier/rfqs");
     alert("Quote submitted!");
+    
+
   };
 
   if(!rfq) return <p>Loading…</p>;

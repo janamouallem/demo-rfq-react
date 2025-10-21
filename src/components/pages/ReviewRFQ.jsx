@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import { api } from "../../api/axios"
+import { useNavigate } from "react-router-dom";
 
 import {
   Paper, Typography, Table, TableHead, TableRow, TableCell, TableBody,
@@ -11,7 +12,7 @@ import {
 export default function ReviewRFQ() {
   const { id } = useParams();
   const [rfq, setRfq] = useState(null);
-
+  const nav = useNavigate();
   useEffect(()=>{ api.get(`/rfqs/${id}`).then(r=>setRfq(r.data)); },[id]);
 
   const lineTotal = (it)=> (parseFloat(it.supplierPrice||0)*(1-(parseFloat(it.discountPct||0)/100))*parseFloat(it.qty||0));
@@ -19,7 +20,9 @@ export default function ReviewRFQ() {
 
   const markApproved = async()=>{
     await api.put(`/rfqs/${rfq.id}`,{...rfq,status:"APPROVED"});
+    nav("/company/rfqs");
     alert("RFQ marked as APPROVED");
+    
   };
 
   if(!rfq) return <p>Loading…</p>;
