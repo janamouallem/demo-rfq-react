@@ -1,0 +1,98 @@
+{
+  "users": [
+    {
+      "id": "company-01",
+      "role": "COMPANY",
+      "username": "company",
+      "password": "123456"
+    },
+    {
+      "id": "sup-01",
+      "role": "SUPPLIER",
+      "username": "supplier",
+      "password": "123456"
+    }
+  ],
+  "rfqs": [
+    {
+      "id": "rfq-1001",
+      "projectName": "Building X",
+      "supplierId": "sup-01",
+      "status": "APPROVED",
+      "createdBy": "company-01",
+      "createdAt": "2025-10-21T10:00:00Z",
+      "items": [
+        {
+          "id": "it-1",
+          "name": "item 1",
+          "unit": "ton",
+          "qty": 2.5,
+          "companyNote": "Comments",
+          "supplierPrice": "10000",
+          "discountPct": "10",
+          "supplierNote": "note"
+        }
+      ]
+    },
+    {
+      "id": "rfq-1761028181727",
+      "projectName": "building",
+      "supplierId": "sup-01",
+      "status": "QUOTED",
+      "createdBy": "company-01",
+      "createdAt": "2025-10-21T06:29:41.727Z",
+      "items": [
+        {
+          "id": "55aa65e0-8bd9-4139-a655-71cd20a194e9",
+          "name": "test",
+          "unit": "kg",
+          "qty": 1,
+          "companyNote": "noteee",
+          "supplierPrice": "1000",
+          "discountPct": "10",
+          "supplierNote": null
+        },
+        {
+          "id": "512be7d5-82e4-4608-b5ac-3b97d4c0faa4",
+          "name": "test2",
+          "unit": "ton",
+          "qty": 1,
+          "companyNote": "note2",
+          "supplierPrice": "2000",
+          "discountPct": "10",
+          "supplierNote": null
+        }
+      ]
+    },
+    {
+      "id": "rfq-1761042173603",
+      "projectName": "Building A",
+      "supplierId": "sup-01",
+      "status": "SENT",
+      "createdBy": "company-01",
+      "createdAt": "2025-10-21T10:22:53.603Z",
+      "items": [
+        {
+          "id": "558b5f2d-3eae-4509-b1a4-2384835272dd",
+          "name": "ITEM 1",
+          "unit": "ton",
+          "qty": 10,
+          "companyNote": "note 1",
+          "supplierPrice": null,
+          "discountPct": null,
+          "supplierNote": null
+        },
+        {
+          "id": "7b156536-b9d2-460a-97ba-c34f86ccd065",
+          "name": "ITEM 2",
+          "unit": "kg",
+          "qty": 100,
+          "companyNote": "note 2",
+          "supplierPrice": null,
+          "discountPct": null,
+          "supplierNote": null
+        }
+      ]
+    }
+  ]
+}
